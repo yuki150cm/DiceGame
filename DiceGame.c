@@ -7,7 +7,12 @@
 int main()
 {
   int dice1=0, dice2=0, total=0;
+  char name[MAX];
   srand((unsigned int)time(NULL));
+//Greeting
+  printf("What is your name?\n");
+  scanf("%s",name);
+  printf("Hello, %s!\n",name);
 //Dice Game
   printf("Rolling the dice...\n");
   dice1 = 1+rand()%6;
